@@ -96,6 +96,90 @@ targetNumPrint(10, 100)
 
 
 "------------------------------"
+# Quiz 4 n의 배수 + 30일 때만 출력
+# 문제를 잘못 이해했으나, 4번 문제를 추상화하여 풀었습니다.
+# 파이썬은 보통 스네이크 케이스를 쓰는 지 궁금합니다.
+# n의 배수이면서 plus의 배수가 아닌 조건을 프린트합니다.
 
 
+def target_multiple_surplus(t, plus, max):
+    i = t
+    while i <= max:
+        if i % t == 0 and i % plus != 0:
+            print(f"pass✅ num: {i} / {max}")
+        i += 1
+
+
+target_multiple_surplus(5, 30, 100)
+"""
+5의 배수이면서 30의 배수는 아니고 max가 100일 때
+pass✅ num: 5 / 100
+pass✅ num: 25 / 100
+(30 제외)
+pass✅ num: 35 / 100
+...
+pass✅ num: 55 / 100
+(60 제외)
+pass✅ num: 65 / 100
+pass✅ num: 70 / 100
+pass✅ num: 85 / 100
+(90 제외)
+pass✅ num: 95 / 100
+pass✅ num: 100 / 100
+"""
+
+"------------------------------"
+# Quiz 5 FizzBuzz
+"""
+• 1에서 100까지 출력
+• 3의 배수는 Fizz 출력
+• 5의 배수는 Buzz 출력
+• 3과 5의 공배수는 FizzBuzz 출력
+"""
+
+
+def fizz_buzz(num):
+    # 3, 5의 공배수처리
+    if num % 15 == 0:
+        print(i, "FizzBuzz")
+    elif num % 3 == 0:
+        print(i, "Fizz")
+    elif num % 5 == 0:
+        print(i, "Buzz")
+
+
+# JS에서 스택 + 문자열로 처리하는 방법이 있었던 것 같은데 궁금합니다.
+
+for i in range(1, 101):
+    fizz_buzz(i)
+"""
+콘솔:
+3 Fizz
+5 Buzz
+6 Fizz
+9 Fizz
+10 Buzz
+12 Fizz
+15 FizzBuzz
+...
+90 FizzBuzz
+93 Fizz
+95 Buzz
+96 Fizz
+99 Fizz
+100 Buzz
+"""
+
+# 추상화 연습 - n개의 배수의 리스트 + n개의 fizz/buzz 단어 리스트 맵핑
+# O(n) 이외의 방법으로 풀어보기
+# def auto_fizz_buzz(tnum, twords, max):
+#     i = 0
+#     while i <= max:
+#      for num in tnum:
+#          if i % num == 0:
+
+
+"------------------------------"
+"------------------------------"
+"------------------------------"
 "------------------------------"
