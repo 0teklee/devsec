@@ -83,7 +83,7 @@ evenNumPrint2(maxCycle)
 # evenNumPrint2(maxInput)
 
 
-# T의 배수를 max까지 max번 프린트하는 함수:
+# T의 배수를 max까지 n번 프린트하는 함수:
 def targetNumPrint(t, max):
     i = t
     while i <= max:
