@@ -1,6 +1,5 @@
 # Python basics I
 
-
 ### 핵심 포인트
 
 - **불리언/비교 연산**: `==`, `!=`, `and`, `or`
@@ -14,8 +13,8 @@
 
 하단의 파이썬 코드는 모두 깃헙에 공개되어 있습니다.
 
- 1. [0925-pythong-basics.py](https://github.com/0teklee/devsec/blob/main/01-python-course/0925-python-basics.py)
- 2. [0925-pythong-basics-2.py](https://github.com/0teklee/devsec/blob/main/01-python-course/0925-python-basics-2.py)
+1. [0925-pythong-basics.py](https://github.com/0teklee/devsec/blob/main/01-python-course/0925-python-basics.py)
+2. [0925-pythong-basics-2.py](https://github.com/0teklee/devsec/blob/main/01-python-course/0925-python-basics-2.py)
 
 ---
 
