@@ -120,3 +120,21 @@ def totalSum(num):
 
 print(totalSum(5))
 print(totalSum(10))
+
+# Quiz 2
+
+
+def check_score(score: int):
+    if score >= 100:
+        return "S"
+    elif 80 <= score < 100:
+        return "A"
+    elif 60 <= score < 80:
+        return "B"
+    else:
+        return "C"
+
+
+print(check_score(5))
+print(check_score(101))
+print(check_score(80))
