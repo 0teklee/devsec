@@ -25,6 +25,22 @@ print((lambda n, m: n if n % 2 == 0 else m)(1, 3))
 # 리스트 정렬
 sortL = [1, 3, 5, 4, 2]
 result = sorted(sortL)
-print(f"quiz 1 : {result}")
+# sort가 원본 값을 바꾸고 반환값이 없기 때문에 sorted를 사용했습니다.
+sortL.sort(reverse=True)
+
+
+print(f"quiz 1 : result = {result} | sortM = {sortL}")
 # https://wikidocs.net/16041
 # JS와 유사해서 익숙하지만 함수 param= 지정, 문법 차이로 다소 혼동이 있습니다.
+
+# Quiz 2
+
+student_tuples = [("john", 160), ("jane", 158), ("dave", 179)]
+
+student_tuples.sort(key=lambda x: x[1])
+
+print(f"lambda sorted : {student_tuples}")
+# sort 키에 람다 함수를 넣을 수 있습니다!
+# 함수 반환값이 평가되는 것인지, deconstructing 같은 문법인지 궁금하네요.
+# reverse param도 편해서 좋습니다. sort 메서드는 파이썬이 JS보다 쉬워서 좋습니다.
+# 다만 제가 익숙했던 언어 문법에서 벗어나서 익힐 필요가 있어보입니다.
